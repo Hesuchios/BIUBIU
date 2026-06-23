@@ -39,16 +39,16 @@ func seedWeapons(path string) {
 
 	stmt, _ := DB.Prepare(`INSERT INTO weapons 
 		(name,type,caliber,image,tier,season,base_price,fire_mode,
-		 base_damage,armor_damage,max_rpm,
+		 base_damage,armor_damage,max_rpm,capacity,
 		 effective_range,vertical_recoil,horiz_recoil,handling_speed,
 		 ads_stability,hip_fire_acc,muzzle_velocity,sound_range,
 		 description,rank)
-		VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`)
+		VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`)
 	defer stmt.Close()
 
 	for _, w := range weapons {
 		stmt.Exec(w.Name, w.Type, w.Caliber, w.Image, w.Tier, w.Season,
-			w.BasePrice, w.FireMode, w.BaseDamage, w.ArmorDamage, w.MaxRPM,
+			w.BasePrice, w.FireMode, w.BaseDamage, w.ArmorDamage, w.MaxRPM, w.Capacity,
 			w.EffectiveRange, w.VerticalRecoil, w.HorizRecoil, w.HandlingSpeed,
 			w.ADSStability, w.HipFireAcc, w.MuzzleVelocity, w.SoundRange,
 			w.Description, w.Rank)

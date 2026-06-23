@@ -21,26 +21,7 @@
     "sound_range": 50,
     "description": "M4A1突击步枪，使用5.56×45mm口径弹药，火力十分可靠。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      10,
-      17,
-      19,
-      20,
-      32,
-      34,
-      35,
-      4,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      38,
-      1
-    ]
+    "capacity": 30
   },
   {
     "name": "AKM突击步枪",
@@ -64,18 +45,7 @@
     "sound_range": 50,
     "description": "7.62×39mm口径经���全自动突击步枪，拥有强大火力但需要足够的技巧。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      28,
-      1
-    ]
+    "capacity": 30
   },
   {
     "name": "QBZ95-1突击步枪",
@@ -99,16 +69,7 @@
     "sound_range": 50,
     "description": "使用5.8×42mm子弹的全自动无托式突击步枪，拥有较快射速和舒适操控，改进后拥有空仓挂机功能。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      37,
-      8,
-      5,
-      44,
-      1,
-      29
-    ]
+    "capacity": 30
   },
   {
     "name": "AKS-74U突击步枪",
@@ -132,20 +93,7 @@
     "sound_range": 50,
     "description": "AKS-74U突击步枪是1979年开始列装的5.45×39mm短���击步枪，直至现在仍有许多国家使用。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      19,
-      20,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      28,
-      1
-    ]
+    "capacity": 20
   },
   {
     "name": "ASh-12战斗步枪",
@@ -166,21 +114,10 @@
     "ads_stability": 61,
     "hip_fire_acc": 43,
     "muzzle_velocity": 340,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "Ash-12突击步枪是一种大口径无托突击步枪，也是一种近身距离作战及城市作战专用的武器，发射12.7×55mm口径步枪子弹。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      17,
-      19,
-      20,
-      11,
-      31,
-      8,
-      5,
-      3
-    ]
+    "capacity": 20
   },
   {
     "name": "K416突击步枪",
@@ -204,24 +141,7 @@
     "sound_range": 50,
     "description": "K416突击步枪是一款德国制造的突击步枪。使用5.56x45mm子弹，具有高度可靠性和优秀的射击性能，广泛应用于全球多个国家的军队和特种部队。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      17,
-      19,
-      20,
-      32,
-      34,
-      35,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      1,
-      1
-    ]
+    "capacity": 30
   },
   {
     "name": "M16A4突击步枪",
@@ -245,18 +165,7 @@
     "sound_range": 50,
     "description": "发射5.56×45mm子弹，采用三连发点射模式的步枪，具备较高的精确度。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      18,
-      11,
-      31,
-      5,
-      44,
-      3,
-      38,
-      1
-    ]
+    "capacity": 20
   },
   {
     "name": "AUG突击步枪",
@@ -280,18 +189,7 @@
     "sound_range": 50,
     "description": "使用5.56×45mm子弹的精确稳定无托突击步枪，适合在中远距离使用。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      20,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      29
-    ]
+    "capacity": 30
   },
   {
     "name": "M7战斗步枪",
@@ -312,26 +210,10 @@
     "ads_stability": 58,
     "hip_fire_acc": 47,
     "muzzle_velocity": 630,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "M7是一款新式步枪，使用6.8×51mm全威力弹药。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      10,
-      17,
-      19,
-      20,
-      34,
-      35,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      1
-    ]
+    "capacity": 20
   },
   {
     "name": "SG552突击步枪",
@@ -355,17 +237,7 @@
     "sound_range": 50,
     "description": "SG552突击步枪使用5.56×45mm口径弹药，枪机设计与AK类似。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      20,
-      31,
-      8,
-      5,
-      44,
-      3,
-      1
-    ]
+    "capacity": 20
   },
   {
     "name": "AK-12突击步枪",
@@ -389,20 +261,7 @@
     "sound_range": 50,
     "description": "AK12是一款由俄罗斯生产的5.45×39mm口径突击步枪，采用模块化设计，具有高精度和可靠性，可适应不同的战斗环境和需求，是俄罗斯军队的主要装备之一。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      17,
-      19,
-      20,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      1
-    ]
+    "capacity": 30
   },
   {
     "name": "SCAR-H战斗步枪",
@@ -423,23 +282,10 @@
     "ads_stability": 55,
     "hip_fire_acc": 45,
     "muzzle_velocity": 630,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "SCAR-H是一款由比利时生产的7.62×51mm口径战斗步枪，具有高精度和可靠性，采用模块化设计，可根据需求进行改装，被广泛应用于军警部队。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      17,
-      19,
-      20,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      1
-    ]
+    "capacity": 20
   },
   {
     "name": "G3战斗步枪",
@@ -460,22 +306,10 @@
     "ads_stability": 62,
     "hip_fire_acc": 45,
     "muzzle_velocity": 630,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "使用7.62×51mm子弹的经典、可靠全威力弹战斗步枪。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      10,
-      20,
-      4,
-      11,
-      31,
-      8,
-      5,
-      3,
-      1
-    ]
+    "capacity": 20
   },
   {
     "name": "PTR-32突击步枪",
@@ -496,21 +330,10 @@
     "ads_stability": 57,
     "hip_fire_acc": 45,
     "muzzle_velocity": 630,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "PTR-32是基于G3步枪改进而来，发射7.62×39mm中间威力步枪弹的突击步枪，通用AKM弹匣，火力强大。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      20,
-      4,
-      11,
-      31,
-      8,
-      5,
-      3,
-      1
-    ]
+    "capacity": 30
   },
   {
     "name": "CAR-15突击步枪",
@@ -534,18 +357,7 @@
     "sound_range": 50,
     "description": "CAR-15步枪是缩短卡宾型AR步枪的通用名称，采用5.56×45mm口径弹药，此特定型号为723型。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      18,
-      20,
-      11,
-      5,
-      3,
-      38,
-      1,
-      21
-    ]
+    "capacity": 20
   },
   {
     "name": "AS Val突击步枪",
@@ -566,21 +378,10 @@
     "ads_stability": 51,
     "hip_fire_acc": 57,
     "muzzle_velocity": 330,
-    "sound_range": 50,
+    "sound_range": 10,
     "description": "发射9×39mm特种弹药的俄式微声突击步枪，穿透性能强大。",
     "rank": 0,
-    "attachment_slots": [
-      2,
-      19,
-      20,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      1
-    ]
+    "capacity": 15
   },
   {
     "name": "MP5冲锋枪",
@@ -601,19 +402,10 @@
     "ads_stability": 45,
     "hip_fire_acc": 68,
     "muzzle_velocity": 450,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "采用9×19mm弹药的全自动冲锋枪，在各项性能上都达到完美平衡。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      4,
-      11,
-      31,
-      8,
-      5,
-      3
-    ]
+    "capacity": 30
   },
   {
     "name": "P90冲锋枪",
@@ -634,19 +426,10 @@
     "ads_stability": 45,
     "hip_fire_acc": 60,
     "muzzle_velocity": 450,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "使用5.7×28mm子弹的全自动无托式冲锋枪，采用了独特的顶置弹匣射击，可容纳更多弹药。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      20,
-      11,
-      31,
-      8,
-      3,
-      29
-    ]
+    "capacity": 50
   },
   {
     "name": "Vector冲锋枪",
@@ -667,22 +450,10 @@
     "ads_stability": 42,
     "hip_fire_acc": 68,
     "muzzle_velocity": 500,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": ".45口径的全自动冲锋枪，超高射速可以在近距离表现出强大爆发力。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      19,
-      20,
-      4,
-      11,
-      31,
-      5,
-      3,
-      28,
-      1
-    ]
+    "capacity": 17
   },
   {
     "name": "UZI冲锋枪",
@@ -703,21 +474,10 @@
     "ads_stability": 43,
     "hip_fire_acc": 66,
     "muzzle_velocity": 450,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "UZI是一款以色列制造的冲锋枪。使用9x19mm子弹，具有紧凑的尺寸和高速射击速度，广泛应用于全球多个国家的军队、警察和安全部队。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      19,
-      20,
-      4,
-      11,
-      8,
-      5,
-      44,
-      3
-    ]
+    "capacity": 25
   },
   {
     "name": "野牛冲锋枪",
@@ -738,22 +498,10 @@
     "ads_stability": 49,
     "hip_fire_acc": 63,
     "muzzle_velocity": 500,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "PP-19野牛是一款俄罗斯制造的冲锋枪。该冲锋枪使用9x19mm子弹，具有独特的圆筒形供弹具，主要用于警察和特种部队。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      19,
-      20,
-      4,
-      11,
-      31,
-      5,
-      3,
-      28,
-      1
-    ]
+    "capacity": 32
   },
   {
     "name": "SMG-45冲锋枪",
@@ -774,23 +522,10 @@
     "ads_stability": 41,
     "hip_fire_acc": 65,
     "muzzle_velocity": 500,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "SMG-45发射.45口径弹药，人机工效上乘，性能稳定。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      17,
-      19,
-      20,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      1
-    ]
+    "capacity": 25
   },
   {
     "name": "SR-3M紧凑突击步枪",
@@ -811,20 +546,10 @@
     "ads_stability": 43,
     "hip_fire_acc": 68,
     "muzzle_velocity": 330,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "SR-3M是一款俄罗斯制造的紧凑突击步枪。该枪使用9x39mm特种子弹，具有紧凑的尺寸和强大的火力，主要用于城市战和特种作战任务。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      19,
-      20,
-      11,
-      31,
-      5,
-      44,
-      3,
-      1
-    ]
+    "capacity": 15
   },
   {
     "name": "勇士冲锋枪",
@@ -845,22 +570,10 @@
     "ads_stability": 48,
     "hip_fire_acc": 67,
     "muzzle_velocity": 500,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "PP-19勇士基于PP-19野牛型号改进而来，使用9x19mm子弹，支持各种配件改造。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      20,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3,
-      28,
-      1
-    ]
+    "capacity": 30
   },
   {
     "name": "MP7",
@@ -881,20 +594,10 @@
     "ads_stability": 44,
     "hip_fire_acc": 68,
     "muzzle_velocity": 450,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "使用4.6x30mm弹药的个人防卫武器，紧凑便携的同时拥有极强的全自动火力。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      19,
-      20,
-      11,
-      31,
-      8,
-      5,
-      3
-    ]
+    "capacity": 20
   },
   {
     "name": "M1014霰弹枪",
@@ -918,15 +621,7 @@
     "sound_range": 50,
     "description": "可靠且功能全面的12号口径半自动霰弹枪，每次发射8颗弹丸。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      4,
-      11,
-      31,
-      8,
-      3
-    ]
+    "capacity": 7
   },
   {
     "name": "S12K霰弹枪",
@@ -950,18 +645,7 @@
     "sound_range": 50,
     "description": "采用弹匣供弹的12号口径半自动霰弹枪，拥有可靠伤害和不错的弹丸扩散，连续射击时后坐力较大。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      20,
-      11,
-      31,
-      8,
-      5,
-      3,
-      28,
-      1
-    ]
+    "capacity": 5
   },
   {
     "name": "M870霰弹枪",
@@ -985,14 +669,7 @@
     "sound_range": 50,
     "description": "经典可靠的12号口径泵动式散弹枪，每次发射8颗弹丸。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      4,
-      11,
-      31,
-      3
-    ]
+    "capacity": 6
   },
   {
     "name": "PKM通用机枪",
@@ -1013,18 +690,10 @@
     "ads_stability": 59,
     "hip_fire_acc": 45,
     "muzzle_velocity": 630,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "全自动机枪，采用7.62x54mmR全威力弹药，中等射速且具备强大压制力。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      10,
-      11,
-      5,
-      3,
-      1
-    ]
+    "capacity": 75
   },
   {
     "name": "M249轻机枪",
@@ -1045,22 +714,10 @@
     "ads_stability": 55,
     "hip_fire_acc": 48,
     "muzzle_velocity": 575,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "发射5.56×45mm弹药的火力强大机枪，为战斗小组提供火力压制，确保作战优势，必要时可使用弹匣供弹。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      10,
-      19,
-      20,
-      4,
-      11,
-      31,
-      8,
-      5,
-      3
-    ]
+    "capacity": 100
   },
   {
     "name": "Mini-14射手步枪",
@@ -1081,17 +738,10 @@
     "ads_stability": 63,
     "hip_fire_acc": 37,
     "muzzle_velocity": 650,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "使用5.56×45mm口径步枪弹的半自动步枪，后坐力温和，精准度可观。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      4,
-      11,
-      31,
-      5
-    ]
+    "capacity": 10
   },
   {
     "name": "VSS射手步枪",
@@ -1112,20 +762,10 @@
     "ads_stability": 61,
     "hip_fire_acc": 38,
     "muzzle_velocity": 330,
-    "sound_range": 50,
+    "sound_range": 10,
     "description": "VSS射手步枪是一款俄罗斯制造的特种狙击步枪。该步枪使用9x39mm亚音速子弹，具有内置消音器，主要用于隐蔽和特种作战任务。",
     "rank": 0,
-    "attachment_slots": [
-      2,
-      19,
-      20,
-      11,
-      31,
-      8,
-      5,
-      44,
-      3
-    ]
+    "capacity": 15
   },
   {
     "name": "SVD狙击步枪",
@@ -1146,19 +786,10 @@
     "ads_stability": 67,
     "hip_fire_acc": 34,
     "muzzle_velocity": 500,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "SVD是一款苏联/俄罗斯制造的半自动狙击步枪。该步枪使用7.62x54mmR子弹，具有优秀的精度和射程，是多个国家的军队和特种部队的首选狙击武器。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      4,
-      11,
-      31,
-      5,
-      44,
-      1
-    ]
+    "capacity": 10
   },
   {
     "name": "M14射手步枪",
@@ -1179,20 +810,10 @@
     "ads_stability": 55,
     "hip_fire_acc": 48,
     "muzzle_velocity": 575,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "7.62×51mm口径的全威力步枪，切换至全自动射击模式有强大的火力，经典设计传承。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      37,
-      11,
-      31,
-      8,
-      5,
-      44,
-      1
-    ]
+    "capacity": 10
   },
   {
     "name": "SKS射手步枪",
@@ -1213,15 +834,10 @@
     "ads_stability": 60,
     "hip_fire_acc": 38,
     "muzzle_velocity": 575,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "可靠灵活的半自动步枪，使用的是7.62×39mm口径弹药，具备不错的操控性和射速。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      37,
-      11
-    ]
+    "capacity": 10
   },
   {
     "name": "SR-25射手步枪",
@@ -1242,27 +858,10 @@
     "ads_stability": 59,
     "hip_fire_acc": 40,
     "muzzle_velocity": 550,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "采用AR系统的7.62×51mm半自动步枪，人机工效上乘，精准度不俗。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      10,
-      17,
-      19,
-      20,
-      32,
-      34,
-      35,
-      4,
-      11,
-      31,
-      8,
-      5,
-      3,
-      1
-    ]
+    "capacity": 10
   },
   {
     "name": "PSG-1射手步枪",
@@ -1283,23 +882,10 @@
     "ads_stability": 66,
     "hip_fire_acc": 34,
     "muzzle_velocity": 750,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "使用7.62×51mm弹药的高精度的半自动狙击步枪,通用部分G3改装部件。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      10,
-      14,
-      11,
-      31,
-      8,
-      5,
-      44,
-      49,
-      3,
-      1
-    ]
+    "capacity": 10
   },
   {
     "name": "SV-98狙击步枪",
@@ -1320,19 +906,10 @@
     "ads_stability": 74,
     "hip_fire_acc": 26,
     "muzzle_velocity": 650,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "使用7.62x54mmR子弹的栓动式狙击步枪，子弹初速一般但具备极高的准确度。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      10,
-      17,
-      19,
-      20,
-      11,
-      31
-    ]
+    "capacity": 7
   },
   {
     "name": "R93狙击步枪",
@@ -1353,17 +930,10 @@
     "ads_stability": 66,
     "hip_fire_acc": 28,
     "muzzle_velocity": 550,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "直拉栓式狙击步枪，使用的是7.62×51mm口径的狙击弹药。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      10,
-      11,
-      31,
-      5
-    ]
+    "capacity": 10
   },
   {
     "name": "M700狙击步枪",
@@ -1384,17 +954,10 @@
     "ads_stability": 70,
     "hip_fire_acc": 27,
     "muzzle_velocity": 650,
-    "sound_range": 50,
+    "sound_range": 60,
     "description": "7.62×51mm口径狙击利器，可轻松狩猎目标，稳定性与射程兼具，支持现代化改装。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      4,
-      11,
-      31,
-      5
-    ]
+    "capacity": 5
   },
   {
     "name": "AWM狙击步枪",
@@ -1415,16 +978,10 @@
     "ads_stability": 74,
     "hip_fire_acc": 23,
     "muzzle_velocity": 750,
-    "sound_range": 50,
+    "sound_range": 80,
     "description": "AWM是一款由英国生产的狙击步枪，采用.338 Lapua Magnum弹药，具有极高的精度和射程，是军警中的顶级狙击武器。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      11,
-      31,
-      22
-    ]
+    "capacity": 5
   },
   {
     "name": "QSZ92G",
@@ -1445,15 +1002,10 @@
     "ads_stability": 41,
     "hip_fire_acc": 77,
     "muzzle_velocity": 400,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "9×19mm口径双动半自动手枪，性能均衡，改进型采用双排单进供弹。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      18,
-      11
-    ]
+    "capacity": 15
   },
   {
     "name": ".357左轮",
@@ -1474,15 +1026,10 @@
     "ads_stability": 43,
     "hip_fire_acc": 65,
     "muzzle_velocity": 340,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "大威力的双动左轮手枪，使用的是.357马格南口径的弹药。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      11,
-      1
-    ]
+    "capacity": 6
   },
   {
     "name": "沙漠之鹰",
@@ -1503,17 +1050,10 @@
     "ads_stability": 39,
     "hip_fire_acc": 71,
     "muzzle_velocity": 340,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "大威力的半自动手枪，使用的是短弹体.50口径的弹药。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      18,
-      11,
-      5,
-      1
-    ]
+    "capacity": 7
   },
   {
     "name": "G18",
@@ -1534,17 +1074,10 @@
     "ads_stability": 43,
     "hip_fire_acc": 67,
     "muzzle_velocity": 400,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "G系列手枪的全自动型号，以超高射速倾泻9×19mm弹药。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      18,
-      11,
-      5,
-      1
-    ]
+    "capacity": 17
   },
   {
     "name": "93R",
@@ -1565,17 +1098,10 @@
     "ads_stability": 38,
     "hip_fire_acc": 78,
     "muzzle_velocity": 400,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "93R手枪是一款由意大利生产的9×19mm三连发手枪，具有高爆发和可靠性。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      18,
-      11,
-      5,
-      1
-    ]
+    "capacity": 12
   },
   {
     "name": "G17",
@@ -1596,15 +1122,9 @@
     "ads_stability": 35,
     "hip_fire_acc": 75,
     "muzzle_velocity": 400,
-    "sound_range": 50,
+    "sound_range": 30,
     "description": "原产国奥地利的半自动手枪，经典、可靠、耐用，采用9×19mm口径。",
     "rank": 0,
-    "attachment_slots": [
-      6,
-      2,
-      18,
-      11,
-      5
-    ]
+    "capacity": 17
   }
 ]

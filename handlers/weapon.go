@@ -17,7 +17,7 @@ func GetWeapons(c *gin.Context) {
 	sort := c.DefaultQuery("sort", "rank")
 
 	query := "SELECT id,name,type,caliber,image,tier,season,base_price,fire_mode," +
-		"base_damage,armor_damage,max_rpm," +
+		"base_damage,armor_damage,max_rpm,capacity," +
 		"effective_range,vertical_recoil,horiz_recoil,handling_speed," +
 		"ads_stability,hip_fire_acc,muzzle_velocity,sound_range," +
 		"description,rank FROM weapons WHERE 1=1"
@@ -59,7 +59,7 @@ func GetWeapons(c *gin.Context) {
 		var w models.Weapon
 		rows.Scan(&w.ID, &w.Name, &w.Type, &w.Caliber, &w.Image, &w.Tier,
 			&w.Season, &w.BasePrice, &w.FireMode,
-			&w.BaseDamage, &w.ArmorDamage, &w.MaxRPM,
+			&w.BaseDamage, &w.ArmorDamage, &w.MaxRPM, &w.Capacity,
 			&w.EffectiveRange, &w.VerticalRecoil, &w.HorizRecoil, &w.HandlingSpeed,
 			&w.ADSStability, &w.HipFireAcc, &w.MuzzleVelocity, &w.SoundRange,
 			&w.Description, &w.Rank)
@@ -78,13 +78,13 @@ func GetWeaponByID(c *gin.Context) {
 	var w models.Weapon
 	err = database.DB.QueryRow(
 		"SELECT id,name,type,caliber,image,tier,season,base_price,fire_mode,"+
-			"base_damage,armor_damage,max_rpm,"+
+			"base_damage,armor_damage,max_rpm,capacity,"+
 			"effective_range,vertical_recoil,horiz_recoil,handling_speed,"+
 			"ads_stability,hip_fire_acc,muzzle_velocity,sound_range,"+
 			"description,rank FROM weapons WHERE id=?", id,
 	).Scan(&w.ID, &w.Name, &w.Type, &w.Caliber, &w.Image, &w.Tier,
 		&w.Season, &w.BasePrice, &w.FireMode,
-		&w.BaseDamage, &w.ArmorDamage, &w.MaxRPM,
+		&w.BaseDamage, &w.ArmorDamage, &w.MaxRPM, &w.Capacity,
 		&w.EffectiveRange, &w.VerticalRecoil, &w.HorizRecoil, &w.HandlingSpeed,
 		&w.ADSStability, &w.HipFireAcc, &w.MuzzleVelocity, &w.SoundRange,
 		&w.Description, &w.Rank)
@@ -107,7 +107,7 @@ func GetTop10(c *gin.Context) {
 
 	rows, err := database.DB.Query(
 		"SELECT id,name,type,caliber,image,tier,season,base_price,fire_mode," +
-			"base_damage,armor_damage,max_rpm," +
+			"base_damage,armor_damage,max_rpm,capacity," +
 			"effective_range,vertical_recoil,horiz_recoil,handling_speed," +
 			"ads_stability,hip_fire_acc,muzzle_velocity,sound_range," +
 			"description,rank FROM weapons ORDER BY rank ASC")
@@ -122,7 +122,7 @@ func GetTop10(c *gin.Context) {
 		var w models.Weapon
 		rows.Scan(&w.ID, &w.Name, &w.Type, &w.Caliber, &w.Image, &w.Tier,
 			&w.Season, &w.BasePrice, &w.FireMode,
-			&w.BaseDamage, &w.ArmorDamage, &w.MaxRPM,
+			&w.BaseDamage, &w.ArmorDamage, &w.MaxRPM, &w.Capacity,
 			&w.EffectiveRange, &w.VerticalRecoil, &w.HorizRecoil, &w.HandlingSpeed,
 			&w.ADSStability, &w.HipFireAcc, &w.MuzzleVelocity, &w.SoundRange,
 			&w.Description, &w.Rank)
@@ -251,13 +251,13 @@ func CompareWeapons(c *gin.Context) {
 		var w models.Weapon
 		err := database.DB.QueryRow(
 			"SELECT id,name,type,caliber,image,tier,season,base_price,fire_mode,"+
-				"base_damage,armor_damage,max_rpm,"+
+				"base_damage,armor_damage,max_rpm,capacity,"+
 				"effective_range,vertical_recoil,horiz_recoil,handling_speed,"+
 				"ads_stability,hip_fire_acc,muzzle_velocity,sound_range,"+
 				"description,rank FROM weapons WHERE id=?", id,
 		).Scan(&w.ID, &w.Name, &w.Type, &w.Caliber, &w.Image, &w.Tier,
 			&w.Season, &w.BasePrice, &w.FireMode,
-			&w.BaseDamage, &w.ArmorDamage, &w.MaxRPM,
+			&w.BaseDamage, &w.ArmorDamage, &w.MaxRPM, &w.Capacity,
 			&w.EffectiveRange, &w.VerticalRecoil, &w.HorizRecoil, &w.HandlingSpeed,
 			&w.ADSStability, &w.HipFireAcc, &w.MuzzleVelocity, &w.SoundRange,
 			&w.Description, &w.Rank)

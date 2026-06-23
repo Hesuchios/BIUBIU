@@ -15,6 +15,7 @@ type Weapon struct {
 	BaseDamage  float64 `json:"base_damage"`
 	ArmorDamage float64 `json:"armor_damage"`
 	MaxRPM      int     `json:"max_rpm"`
+	Capacity    int     `json:"capacity"`
 
 	// Modifiable attributes (base values, 0-100 scale)
 	EffectiveRange float64 `json:"effective_range"`

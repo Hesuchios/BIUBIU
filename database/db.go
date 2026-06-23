@@ -41,6 +41,7 @@ func createTables() {
 		base_damage REAL DEFAULT 0,
 		armor_damage REAL DEFAULT 0,
 		max_rpm INTEGER DEFAULT 0,
+		capacity INTEGER DEFAULT 0,
 		effective_range REAL DEFAULT 0,
 		vertical_recoil REAL DEFAULT 0,
 		horiz_recoil REAL DEFAULT 0,
