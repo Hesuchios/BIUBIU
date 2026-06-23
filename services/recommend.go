@@ -377,6 +377,7 @@ func downgradeExpensive(
 	origScore := calcWeightedAttrScore(origAttrs, weights)
 	minScore := origScore * keepRatio
 
+	// Sort chosen slots by price descending (replace most expensive first)
 	type slotCost struct {
 		slot string
 		cost int
@@ -387,25 +388,38 @@ func downgradeExpensive(
 	}
 	sort.Slice(sortable, func(i, j int) bool { return sortable[i].cost > sortable[j].cost })
 
+	// Precompute base attrs without each slot for fast trial
 	for _, sc := range sortable {
 		parts, ok := slotMap[sc.slot]
-		if !ok {
+		if !ok || len(parts) < 2 {
 			continue
 		}
-		sort.Slice(parts, func(i, j int) bool { return parts[i].Price < parts[j].Price })
 
 		current := result[sc.slot]
+
+		// Base attrs without this slot's current part
+		withoutSlot := baseAttrs
+		for s, p := range result {
+			if s != sc.slot {
+				for i := 0; i < 8; i++ {
+					withoutSlot[i] = clamp0100(withoutSlot[i] + p.attrs[i])
+				}
+			}
+		}
+
+		// Sort parts by price ascending, find first that keeps score
+		sort.Slice(parts, func(i, j int) bool { return parts[i].Price < parts[j].Price })
+
 		for idx := range parts {
 			cheaper := &parts[idx]
 			if cheaper.Price >= current.Price {
 				break
 			}
-			trial := map[string]*attachmentRow{}
-			for s, p := range result {
-				trial[s] = p
+			// Fast trial: only compute with this part
+			trialAttrs := withoutSlot
+			for i := 0; i < 8; i++ {
+				trialAttrs[i] = clamp0100(trialAttrs[i] + cheaper.attrs[i])
 			}
-			trial[sc.slot] = cheaper
-			trialAttrs := recalcAttrs(baseAttrs, trial)
 			trialScore := calcWeightedAttrScore(trialAttrs, weights)
 			if trialScore >= minScore {
 				result[sc.slot] = cheaper
@@ -460,11 +474,15 @@ func getTuneFormula(style, weaponType string) string {
 }
 
 func loadAttachments(weaponType, weaponName string) map[string][]attachmentRow {
+	// Directly filter compatible attachments at SQL level for performance
 	rows, err := database.DB.Query(
 		"SELECT id,name,slot,price," +
 			"effective_range,vertical_recoil,horiz_recoil,handling_speed," +
 			"ads_stability,hip_fire_acc,muzzle_velocity,sound_range," +
-			"tune_attr_a,tune_attr_b,tune_value,compat_weapons FROM attachments")
+			"tune_attr_a,tune_attr_b,tune_value,compat_weapons FROM attachments "+
+			"WHERE compat_weapons='通用' OR compat_weapons='' OR "+
+			"compat_weapons LIKE '%'||?||'%' OR compat_weapons LIKE '%'||?||'%'",
+		weaponType, weaponName)
 	if err != nil {
 		return nil
 	}
@@ -476,11 +494,6 @@ func loadAttachments(weaponType, weaponName string) map[string][]attachmentRow {
 			&a.EffectiveRange, &a.VerticalRecoil, &a.HorizRecoil, &a.HandlingSpeed,
 			&a.ADSStability, &a.HipFireAcc, &a.MuzzleVelocity, &a.SoundRange,
 			&a.TuneAttrA, &a.TuneAttrB, &a.TuneValue, &a.CompatWeapons)
-		if a.CompatWeapons != "通用" && a.CompatWeapons != "" {
-			if !compatWith(a.CompatWeapons, weaponType, weaponName) {
-				continue
-			}
-		}
 		ar := attachmentRow{Attachment: a, attrs: [8]float64{
 			a.EffectiveRange, a.VerticalRecoil, a.HorizRecoil, a.HandlingSpeed,
 			a.ADSStability, a.HipFireAcc, a.MuzzleVelocity, a.SoundRange,
