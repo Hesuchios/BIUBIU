@@ -198,7 +198,6 @@ def get_accessories():
             print("未能抓取到数据")
             break
 
-
 def main():
     get_firearms()
     get_accessories()
