@@ -24,7 +24,23 @@ func Init(dbPath string) {
 	}
 
 	createTables()
+	migrate()
 	log.Println("Database initialized successfully")
+}
+
+// migrate handles schema upgrades for existing databases
+func migrate() {
+	// Check if capacity column exists in weapons table
+	var colCount int
+	DB.QueryRow("SELECT COUNT(*) FROM pragma_table_info('weapons') WHERE name='capacity'").Scan(&colCount)
+	if colCount == 0 {
+		DB.Exec("ALTER TABLE weapons ADD COLUMN capacity INTEGER DEFAULT 0")
+		log.Println("Migration: added capacity column to weapons table")
+		// Force re-seed by clearing weapons data
+		DB.Exec("DELETE FROM weapons")
+		DB.Exec("DELETE FROM mod_codes")
+		log.Println("Migration: cleared old weapon data for re-seed")
+	}
 }
 
 func createTables() {
