@@ -1,0 +1,22 @@
+# Binary
+biubiu.exe
+biubiu.exe~
+*.exe
+
+# Database
+data/biubiu.db
+data/biubiu.db-shm
+data/biubiu.db-wal
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Go
+vendor/

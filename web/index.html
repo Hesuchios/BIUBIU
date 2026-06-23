@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIUBIU - 三角洲行动枪械推荐系统</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <nav class="main-nav">
+      <div class="nav-inner">
+        <div class="nav-brand" @click="page='top10'">
+          <span class="brand-icon">&#9733;</span>
+          <span class="brand-text">BIUBIU</span>
+          <span class="brand-sub">三角洲行动 | 枪械系统</span>
+        </div>
+        <div class="nav-links">
+          <a :class="{active: page==='top10'}" @click="page='top10'">TOP10 推荐榜</a>
+          <a :class="{active: page==='weapons'}" @click="page='weapons'">枪械库</a>
+          <a :class="{active: page==='attachments'}" @click="page='attachments'">配件库</a>
+          <a :class="{active: page==='codes'}" @click="page='codes'">改枪码库</a>
+          <a :class="{active: page==='smart'}" @click="page='smart'">一键改装</a>
+          <a :class="{active: page==='knowledge'}" @click="page='knowledge'">改枪知识库</a>
+        </div>
+        <div class="nav-season">S9 赛季</div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <top-ranking v-if="page==='top10'"></top-ranking>
+      <weapon-db v-if="page==='weapons'"></weapon-db>
+      <attachment-db v-if="page==='attachments'"></attachment-db>
+      <mod-code-lib v-if="page==='codes'"></mod-code-lib>
+      <smart-mod v-if="page==='smart'"></smart-mod>
+      <knowledge-base v-if="page==='knowledge'"></knowledge-base>
+    </main>
+
+    <footer class="main-footer">
+      <p>BIUBIU 枪械推荐系统 &copy; 2026 | 数据来源: 社区实战测试 | 仅供参考，以游戏内实际为准</p>
+    </footer>
+  </div>
+
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/components/RadarChart.js"></script>
+  <script src="/static/js/components/TopRanking.js"></script>
+  <script src="/static/js/components/WeaponDB.js"></script>
+  <script src="/static/js/components/AttachmentDB.js"></script>
+  <script src="/static/js/components/ModCodeLib.js"></script>
+  <script src="/static/js/components/SmartMod.js"></script>
+  <script src="/static/js/components/KnowledgeBase.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
